@@ -1,0 +1,163 @@
+.side-navbar {
+    width: 350px;
+    height: 100vh;
+    /* border: 1px solid red; */
+    overflow-y: auto;
+    background-color: #191919;
+    transition: 0.3s ease;
+}
+
+
+/* Side-NavBar Top Starts Here */
+
+.home,
+.culture,
+.rooms,
+.playlist {
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    /* border: 1px solid black; */
+    color: rgb(175, 175, 175);
+    font-size: 0.8rem;
+    padding-left: 0.8rem;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.active {
+    color: white;
+}
+
+.home:hover,
+.culture:hover,
+.rooms:hover,
+.playlist:hover {
+    color: white;
+}
+
+.home span,
+.culture span,
+.rooms span,
+.playlist span {
+    margin: 0.2rem 0.5rem;
+}
+
+.home-left,
+.home-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home-right {
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+
+/* Side-NavBar Top ends here */
+
+
+/* Side-NavBar Middle starts here  */
+
+.thumbnail-header {
+    width: 80%;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: white;
+    margin: 0.5rem auto;
+}
+
+.thumbnail {
+    margin: 0.5rem auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.thumbnail-left,
+.thumbnail-right {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.thumbnail-right {
+    width: 30%;
+    justify-content: flex-end;
+}
+
+.thumbnail-left img {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+}
+
+.thumbnail-left span {
+    margin: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+}
+
+.thumbnail-right button {
+    outline: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.4rem;
+    border: none;
+    cursor: pointer;
+}
+
+.see-more {
+    width: 80%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto;
+}
+
+
+/* Side-NavBar Middle ends here */
+
+
+/* Side-NavBar bottom Starts here */
+
+.thumbnail-right-bottom button {
+    font-size: 0.7rem;
+}
+
+.side-navbar::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-sc.side-navbarrollbar-track {
+    background-color: #191919;
+}
+
+.side-navbar::-webkit-scrollbar-thumb {
+    background-color: rgb(54, 54, 54);
+    border-radius: 0.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .side-navbar {
+        width: 400px;
+        font-size: 0.4rem;
+    }
+    .thumbnail {
+        width: 85%;
+        overflow-wrap: break-word;
+    }
+    .thumbnail-left {
+        width: 85%;
+    }
+    .thumbnail-right button {
+        font-size: 0.6rem;
+    }
+}

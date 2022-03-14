@@ -1,0 +1,100 @@
+.card {
+    width: 13rem;
+    height: 18rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    margin: 1rem;
+    flex-grow: 1;
+}
+
+.image-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.live {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    background-color: red;
+    border-radius: 0.3rem;
+    color: white;
+    font-size: 0.72rem;
+    padding: 0.1rem 0.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-thumbnail {
+    position: absolute;
+    border-radius: 50%;
+    right: 5%;
+    top: 3%;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.watching {
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    background-color: #101010;
+    color: white;
+    border-radius: 0.2rem;
+    padding: 0.1rem 0.5rem;
+    font-size: 0.7rem;
+}
+
+.card-runtime {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.card-body {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    height: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-overflow: ellipsis;
+}
+
+.desc {
+    display: inline;
+    width: 90%;
+    white-space: initial;
+    text-overflow: ellipsis;
+    overflow-wrap: initial;
+    /* border: 1px solid white; */
+}
+
+.button {
+    width: 10%;
+    font-size: 1.3rem;
+    background: transparent;
+    outline: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline;
+    transform: rotate(90deg);
+}
+
+.card-title {
+    font-size: 0.7rem;
+}

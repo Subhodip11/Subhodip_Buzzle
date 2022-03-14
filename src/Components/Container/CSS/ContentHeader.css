@@ -1,0 +1,11 @@
+.content-card-header {
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem 0.3rem;
+}
+
+.content-card-header span:first-child,
+.content-card-header span:nth-child(3),
+.content-card-header span:last-child {
+    color: #606060;
+}
