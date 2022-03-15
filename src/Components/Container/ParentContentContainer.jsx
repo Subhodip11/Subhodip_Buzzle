@@ -4,7 +4,7 @@ import "./CSS/ParentContentContainer.css";
 import Thumbnail from "../../images/avatar1.png";
 import VideoThumbnail from "../../images/videoThumbnail.webp";
 
-const ParentContentContainer = () => {
+const ParentContentContainer = (props) => {
   const sampleData = [
     {
       live: "live",
@@ -53,8 +53,12 @@ const ParentContentContainer = () => {
     },
   ];
 
+  const styleObj = {
+    background: `rgba(0, 0, 0, ${props.opacityController})`,
+  };
+
   return (
-    <div className="content-container">
+    <div className="content-container" style={styleObj}>
       <ContentContainer headerTitle=" Data Sceince" data={sampleData} />
       <ContentContainer headerTitle="SOFTWARE ENGINEERING" data={sampleData} />
       <ContentContainer headerTitle="FINANCE & INVESTMENT" data={sampleData} />

@@ -6,13 +6,20 @@ import ParentContentContainer from "./Components/Container/ParentContentContaine
 
 function App() {
   const [enable, setEnable] = useState(true);
+  const [opacityController, setOpacityController] = useState(0.89);
+
   return (
     <>
       <div className="container">
-        <TopnavBar enable={enable} setEnable={setEnable} />
+        <TopnavBar
+          enable={enable}
+          setEnable={setEnable}
+          opacityController={opacityController}
+          setOpacityController={setOpacityController}
+        />
         <div className="child-container">
           <SideNavBar enable={enable} />
-          <ParentContentContainer />
+          <ParentContentContainer opacityController={opacityController} />
         </div>
       </div>
     </>

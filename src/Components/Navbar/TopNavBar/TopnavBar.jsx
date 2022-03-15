@@ -3,6 +3,8 @@ import Search from "@mui/icons-material/Search";
 import "./CSS/TopNavBar.css";
 const TopnavBar = (props) => {
   const onClickHandler = () => {
+    if (!props.enable) props.setOpacityController(0.89);
+    else props.setOpacityController(1);
     props.setEnable(!props.enable);
   };
 

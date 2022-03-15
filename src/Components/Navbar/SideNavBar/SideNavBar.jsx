@@ -7,6 +7,7 @@ import "./CSS/SideNavBar.css";
 export const SideNavBar = (props) => {
   const obj = {
     display: props.enable ? "block" : "none",
+    trasition: "1s ease-in",
   };
 
   return (

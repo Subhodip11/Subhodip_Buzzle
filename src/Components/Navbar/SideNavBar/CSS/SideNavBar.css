@@ -147,8 +147,11 @@
 
 @media only screen and (max-width: 600px) {
     .side-navbar {
-        width: 400px;
-        font-size: 0.4rem;
+        position: absolute;
+        width: 50%;
+        font-size: 0.35rem;
+        z-index: 2;
+        transition: 1s ease-in;
     }
     .thumbnail {
         width: 85%;
@@ -156,6 +159,9 @@
     }
     .thumbnail-left {
         width: 85%;
+    }
+    .thumbnail-left span {
+        font-size: 0.65rem;
     }
     .thumbnail-right button {
         font-size: 0.6rem;
