@@ -22,16 +22,6 @@ const SideNavbarTop = () => {
         <AcUnit />
         <span>Culture</span>
       </div>
-
-      <div className="rooms">
-        <People />
-        <span>Rooms</span>
-      </div>
-
-      <div className="rooms">
-        <PlayListAdd />
-        <span>PlayList</span>
-      </div>
     </div>
   );
 };

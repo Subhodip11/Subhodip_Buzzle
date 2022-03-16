@@ -11,7 +11,7 @@ const ParentContentContainer = (props) => {
       thumbnailImageSrc: Thumbnail,
       currentViewers: "123k Viewers",
       ImageSource: VideoThumbnail,
-      desc: "Updated Skills for Data Science based on Experienence",
+      desc: "Updated Skills for Data Science based on Experienence awjkldawjkllwdiajo;k",
       contentTitle: "krish Naik",
       runTime: "01:20:00",
     },
@@ -53,16 +53,40 @@ const ParentContentContainer = (props) => {
     },
   ];
 
-  const styleObj = {
-    background: `rgba(0, 0, 0, ${props.opacityController})`,
-  };
-
   return (
-    <div className="content-container" style={styleObj}>
-      <ContentContainer headerTitle=" Data Sceince" data={sampleData} />
-      <ContentContainer headerTitle="SOFTWARE ENGINEERING" data={sampleData} />
-      <ContentContainer headerTitle="FINANCE & INVESTMENT" data={sampleData} />
-      <ContentContainer headerTitle="ENTREPRENEURSHIP" data={sampleData} />
+    <div className="content-container">
+      <ContentContainer
+        headerTitle=" Data Sceince"
+        data={
+          props.numberOfContent === 4
+            ? sampleData.slice(0, sampleData.length - 1)
+            : sampleData
+        }
+      />
+      <ContentContainer
+        headerTitle="SOFTWARE ENGINEERING"
+        data={
+          props.numberOfContent === 4
+            ? sampleData.slice(0, sampleData.length - 1)
+            : sampleData
+        }
+      />
+      <ContentContainer
+        headerTitle="FINANCE & INVESTMENT"
+        data={
+          props.numberOfContent === 4
+            ? sampleData.slice(0, sampleData.length - 1)
+            : sampleData
+        }
+      />
+      <ContentContainer
+        headerTitle="ENTREPRENEURSHIP"
+        data={
+          props.numberOfContent === 4
+            ? sampleData.slice(0, sampleData.length - 1)
+            : sampleData
+        }
+      />
     </div>
   );
 };

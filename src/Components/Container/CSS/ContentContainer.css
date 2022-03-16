@@ -1,8 +1,12 @@
 .scrollable {
     width: 100%;
-    white-space: nowrap;
-    overflow-x: auto;
     transition: 0.3s ease-in;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 0.2rem;
 }
 
 .see-more-tag a {
@@ -12,7 +16,7 @@
 .see-more-tag {
     margin: 1rem;
     margin-top: 0.3rem;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 .scrollable::-webkit-scrollbar {
@@ -23,4 +27,13 @@
 
 .scrollable::-webkit-scrollbar-thumb {
     background-color: #303030;
+}
+
+@media only screen and (max-width=600px) {
+    .scrollable {
+        justify-content: flex-start;
+    }
+    .see-more-tag {
+        padding-left: 0.5em;
+    }
 }

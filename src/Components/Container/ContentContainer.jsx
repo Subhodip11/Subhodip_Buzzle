@@ -4,7 +4,6 @@ import ContentHeader from "./ContentHeader";
 import "./CSS/ContentContainer.css";
 
 const ContentContainer = (props) => {
-  console.log(props.data);
   return (
     <div>
       <ContentHeader title={props.headerTitle} />

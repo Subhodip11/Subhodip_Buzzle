@@ -4,6 +4,7 @@
     background-color: #101010;
     color: white;
     width: 100%;
+    margin-bottom: 4rem;
     /* border: 2px solid white; */
 }
 
@@ -20,9 +21,9 @@
     background-color: #191919;
 }
 
-@media only screen and (max-width=952px) {
+@media only screen and (max-width:952px) {
     .content-container::-webkit-scrollbar {
-        width: 3px;
+        width: 5px;
     }
     .content-container::-webkit-scrollbar-thumb {
         background-color: #fff;

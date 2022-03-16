@@ -1,100 +1,95 @@
 .card {
-    width: 13rem;
+    margin: 0.4rem;
+    /* border: 1px solid white; */
+    width: 12rem;
     height: 18rem;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-    color: white;
-    margin: 1rem;
-    flex-grow: 1;
 }
 
 .image-container {
-    position: relative;
-    top: 0;
-    left: 0;
+    width: fit-content;
     height: 70%;
-    width: 100%;
+    position: relative;
+}
+
+.live {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    padding: 0.3rem;
+    text-transform: uppercase;
+    background-color: red;
+    border-radius: 0.4rem;
+    font-size: 0.8rem;
+}
+
+.card-thumbnail {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.watching {
+    background-color: #050505;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    font-size: 0.8rem;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
+    background-size: contain;
 }
 
-.live {
-    position: absolute;
-    top: 3%;
-    left: 5%;
-    background-color: red;
-    border-radius: 0.3rem;
-    color: white;
-    font-size: 0.72rem;
-    padding: 0.1rem 0.3rem;
-    font-weight: bold;
-    text-transform: uppercase;
+.card-body {
+    display: flex;
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+    margin-top: 0.5rem;
+    cursor: pointer;
 }
 
-.card-thumbnail {
-    position: absolute;
-    border-radius: 50%;
-    right: 5%;
-    top: 3%;
-    width: 1.8rem;
-    height: 1.8rem;
+.card-body .desc {
+    font-size: 0.85rem;
+    width: 80%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
-.watching {
-    position: absolute;
-    bottom: 3%;
-    left: 5%;
-    background-color: #101010;
-    color: white;
-    border-radius: 0.2rem;
-    padding: 0.1rem 0.5rem;
-    font-size: 0.7rem;
+.card-body .button {
+    transform: rotate(90deg);
+}
+
+.card-title,
+.card-runtime {
+    font-size: 0.8rem;
+    color: #606060;
 }
 
 .card-runtime {
     display: flex;
     align-items: center;
-    font-size: 0.8rem;
+    margin: 0.2rem 0;
 }
 
-.card-body {
-    font-size: 0.8rem;
-    line-height: 1.5rem;
-    height: 3rem;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 0.5rem;
-    text-overflow: ellipsis;
-}
-
-.desc {
-    display: inline;
-    width: 90%;
-    white-space: initial;
-    text-overflow: ellipsis;
-    overflow-wrap: initial;
-    /* border: 1px solid white; */
-}
-
-.button {
-    width: 10%;
-    font-size: 1.3rem;
-    background: transparent;
-    outline: none;
-    color: white;
-    border: none;
-    cursor: pointer;
-    display: inline;
-    transform: rotate(90deg);
-}
-
-.card-title {
-    font-size: 0.7rem;
+@media only screen and (max-width:500px) {
+    .card {
+        width: 10rem;
+    }
+    .card-title {
+        font-size: 0.7rem;
+    }
 }

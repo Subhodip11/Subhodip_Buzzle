@@ -1,11 +1,21 @@
 .content-card-header {
     color: white;
     text-transform: uppercase;
-    padding: 0.5rem 1rem 0.3rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 .content-card-header span:first-child,
 .content-card-header span:nth-child(3),
 .content-card-header span:last-child {
     color: #606060;
+}
+
+@media only screen and (max-width:900px) {
+    .content-card-header {
+        font-size: 3.5vw;
+        line-height: 1.5rem;
+        text-align: center;
+    }
 }

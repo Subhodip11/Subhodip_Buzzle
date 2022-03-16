@@ -14,11 +14,11 @@ const ContentBody = (props) => {
       </div>
       <div className="card-body">
         <div className="desc">{props.desc}</div>
-        <button className="button">...</button>
+        <span className="button">...</span>
       </div>
       <div className="card-title">{props.contentTitle}</div>
       <div className="card-runtime">
-        <TimeLapse fontSize="small" />
+        <TimeLapse fontSize="smaller" style={{ color: "white" }} />
         &nbsp; {props.runTime}
       </div>
     </div>
