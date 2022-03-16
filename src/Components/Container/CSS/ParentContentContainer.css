@@ -1,5 +1,5 @@
 .content-container {
-    height: 100vh;
+    height: auto;
     overflow: auto;
     background-color: #101010;
     color: white;

@@ -20,6 +20,19 @@
     width: 100%;
 }
 
+.child-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.child-container::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+.child-container::-webkit-scrollbar-track {
+    background-color: #191919;
+}
+
 @media only screen and (max-width=952px) {
     .child-container {
         position: relative;
