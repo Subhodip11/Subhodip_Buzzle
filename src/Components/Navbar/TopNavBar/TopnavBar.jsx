@@ -3,6 +3,7 @@ import Search from "@mui/icons-material/Search";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import "./CSS/TopNavBar.css";
+
 const TopnavBar = (props) => {
   return (
     <div className="top-navbar">

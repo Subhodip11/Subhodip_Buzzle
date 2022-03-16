@@ -167,12 +167,16 @@
         font-size: 0.65rem;
     }
     .thumbnail-right button {
-        font-size: 0.6rem;
+        font-size: 2.1vw;
     }
     .thumbnail-header {
         font-size: 3vw;
     }
     .see-more {
         padding: 0.5rem 0;
+    }
+    .home-left,
+    .culture {
+        font-size: 3vw;
     }
 }

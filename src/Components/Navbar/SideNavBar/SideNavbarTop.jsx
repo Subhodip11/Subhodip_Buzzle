@@ -2,8 +2,6 @@ import React from "react";
 import "./CSS/SideNavBar.css";
 import HomeIcon from "@mui/icons-material/Home";
 import AcUnit from "@mui/icons-material/AcUnit";
-import People from "@mui/icons-material/People";
-import PlayListAdd from "@mui/icons-material/PlaylistAdd";
 import Return from "@mui/icons-material/KeyboardReturn";
 
 const SideNavbarTop = () => {
@@ -15,7 +13,7 @@ const SideNavbarTop = () => {
           <span>Home</span>
         </div>
         <div className="home-right">
-          <Return />
+          <Return fontSize="small" />
         </div>
       </div>
       <div className="culture">
